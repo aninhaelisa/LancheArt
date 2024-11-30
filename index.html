@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanches</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="src/5.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="menu-background"></div>
+    <nav class="menu">
+      <div class="logo">
+        <img src="src/5.png" alt="Logo">
+      </div>
+      <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+      <ul class="menu-links">
+        <li><img src="src/1.png" alt="menu"><a href="#menu">Menu</a></li>
+        <li><img src="src/2.png" alt="entrega"><a href="#entrega">Entrega</a></li>
+        <li><img src="src/3.png" alt="localização"><a href="#local">Local</a></li>
+        <li><img src="src/4.png" alt="Contato"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carousel">
+    <button class="carousel-button prev">❮</button>
+    <div class="carousel-track">
+      <div class="carousel-slide" id="div1">
+        <img src="src/h1.png" alt="Imagem 1">
+      </div>
+      <div class="carousel-slide" id="div2">
+        <img src="src/h2.png" alt="Imagem 2">
+      </div>
+      <div class="carousel-slide" id="div3">
+        <img src="src/h3.png" alt="Imagem 3">
+      </div>
+    </div>
+    <button class="carousel-button next">❯</button>
+  </div>
+
+  <div class="category-container">
+    <div class="category-item" style="background-image: url('https://i.pinimg.com/736x/ce/58/79/ce5879f3461d3fd0713c0630b48c2d79.jpg');">
+      <div class="category-content">
+        <h3>Vegetarianos</h3>
+
+      </div>
+    </div>
+    <div class="category-item" style="background-image: url('https://i.pinimg.com/736x/4c/85/ae/4c85ae15d81ec16c33de0331ece40e08.jpg');">
+      <div class="category-content">
+        <h3>Combos</h3>
+
+      </div>
+    </div>
+    <div class="category-item" style="background-image: url('https://i.pinimg.com/736x/65/a4/2b/65a42b17d160a6eafa2a9b4e9270b9b2.jpg');">
+      <div class="category-content">
+        <h3>Elite</h3>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-icon" id="cart-icon">🍔</div>
+
+  <div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+
+      <span class="close-btn" id="close-btn">✖️</span>
+      <h2>Produtos no Carrinho</h2>
+      <div class="cart-items" id="cart-items">
+
+      </div>
+      <div class="cart-total">
+        <span>Total: </span><span id="total-price">R$ 0,00</span>
+      </div>
+      <button class="buy-btn" id="buy-btn">Comprar</button>
+    </div>
+  </div>
+<div class="most-requests"><div class="line"></div> Mais Pedidos <div class="line"></div></div>
+  <div class="product-container">
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/bf/e2/56/bfe25672333823b6b2f0ec821ff47770.jpg" alt="Hambúrguer Clássico">
+      <h3>Hambúrguer Clássico</h3>
+      <p>Hambúrguer suculento com queijo e molho especial.</p>
+      <span class="price">R$ 18,00</span>
+      <button class="add-to-cart-btn" data-name="Hambúrguer Clássico" data-price="18.00">➕</button>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/13/1f/fe/131ffe17fbaca82da95dd14dff884e17.jpg" alt="Hambúrguer Bacon">
+      <h3>Hambúrguer Bacon</h3>
+      <p>Hambúrguer com bacon crocante e queijo cheddar.</p>
+      <span class="price">R$ 22,00</span>
+      <button class="add-to-cart-btn" data-name="Hambúrguer Bacon" data-price="22.00">➕</button>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/be/90/64/be9064cdf79378df8e113c9895400255.jpg" alt="Hambúrguer Vegetariano">
+      <h3>Hambúrguer Vegetariano</h3>
+      <p>Feito com cogumelos e queijo, perfeito para vegetarianos.</p>
+      <span class="price">R$ 20,00</span>
+      <button class="add-to-cart-btn" data-name="Hambúrguer Vegetariano" data-price="20.00">➕</button>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/0e/08/c3/0e08c387e9a295f2bfa5d0852f65f41b.jpg" alt="Hambúrguer Frango">
+      <h3>Hambúrguer Frango</h3>
+      <p>Delicioso hambúrguer de frango com molho de mostarda e mel.</p>
+      <span class="price">R$ 19,00</span>
+      <button class="add-to-cart-btn" data-name="Hambúrguer Frango" data-price="19.00">➕</button>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/7f/e7/ae/7fe7ae22bcfe500d64014cf73cdba078.jpg" alt="Hambúrguer Queijo">
+      <h3>Hambúrguer Picante</h3>
+      <p>carne suculenta, pimentas frescas, molho apimentado e queijo derretido</p>
+      <span class="price">R$ 25,00</span>
+      <button class="add-to-cart-btn" data-name="Hambúrguer Queijo" data-price="25.00">➕</button>
+    </div>
+    <div class="product">
+      <img src="https://i.pinimg.com/736x/f3/ce/4f/f3ce4fc30d894213638e9d2132a7ea09.jpg" alt="Hambúrguer Cheddar">
+      <h3>Hambúrguer Cheddar</h3>
+      <p>Hambúrguer suculento com cheddar derretido e cebolas caramelizadas.</p>
+      <span class="price">R$ 23,00</span>
+      <button class="add-to-cart-btn" data-name="Hambúrguer Cheddar" data-price="23.00">➕</button>
+    </div>
+  </div>
+
+  <div class="why-buy-container">
+    <div class="reason">
+      <img src="https://cdn-icons-png.flaticon.com/512/3163/3163742.png" alt="Qualidade" class="reason-image">
+      <h3>Qualidade Garantida</h3>
+      <p>Nossos lanches são feitos com ingredientes frescos e de alta qualidade, garantindo sabor inigualável a cada mordida.</p>
+    </div>
+    <div class="reason">
+      <img src="https://cdn-icons-png.flaticon.com/512/15371/15371091.png" alt="Atendimento Personalizado" class="reason-image">
+      <h3>Atendimento Personalizado</h3>
+      <p>Oferecemos um atendimento amigável e dedicado para garantir que sua experiência conosco seja sempre a melhor.</p>
+    </div>
+    <div class="reason">
+      <img src="https://cdn-icons-png.flaticon.com/512/5246/5246195.png" alt="Rápido e Prático" class="reason-image">
+      <h3>Rápido e Prático</h3>
+      <p>Entregamos rapidamente, sem comprometer a qualidade. Seu lanche chega quente e fresquinho, pronto para ser devorado.</p>
+    </div>
+    <div class="reason">
+      <img src="https://cdn-icons-png.flaticon.com/512/2543/2543174.png" alt="Preços Justos" class="reason-image">
+      <h3>Preços Justos</h3>
+      <p>Oferecemos o melhor custo-benefício, com lanches deliciosos a preços acessíveis para todos.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Lanchonete Sabor &amp; Alegria. Todos os direitos reservados.</p>
+      <p>Apenas para fins de estudos</p>
+      <a href="https://github.com/seu-usuario" target="_blank" class="footer-link">Visite meu GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
